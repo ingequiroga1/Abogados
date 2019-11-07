@@ -7,7 +7,18 @@ body {
     background: #fafafa;
 }
 
-
+#sidebar2{
+   background-color: #000000; 
+    padding: 2.5em 2.5em 0.5em 2.5em;
+    margin: 0;
+    height: 100%;
+    left: 0;
+    text-align: right;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 0;
+    box-sizing: border-box;
+}
 
 #sidebar {
     padding: 2.5em 2.5em 0.5em 2.5em;
@@ -17,10 +28,9 @@ body {
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    position: fixed;
     text-align: right;
     top: 0;
-    width: 300px;
+   /* width: 300px;*/
     z-index: 10000;
     background-color: #000000;
     box-sizing: border-box;
@@ -40,27 +50,27 @@ p {
 }
 
 
-#sidebar .sidebar-header {
+#sidebar2 .sidebar-header {
     padding: 20px;
     background: #6d7fcc;
 }
 
-#sidebar nav > ul {
+#sidebar2 nav > ul {
     list-style: none;
     padding: 0;
 }
 
-#sidebar ul.components {
+#sidebar2 ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #47748b;
 }
 
-#sidebar ul p {
+#sidebar2 ul p {
     color: #fff;
     padding: 10px;
 }
 
-#sidebar nav > ul > li {
+#sidebar2 nav > ul > li {
             -moz-transform: translateY(0);
             -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
@@ -75,7 +85,7 @@ p {
             position: relative;
         }
 
-#sidebar nav ul li a {
+#sidebar2 nav ul li a {
         -moz-transition: color 0.2s ease;
         -webkit-transition: color 0.2s ease;
         -ms-transition: color 0.2s ease;
@@ -94,8 +104,8 @@ p {
         text-transform: uppercase;
     }
 
-#sidebar nav ul li a:before,
-#sidebar nav ul li a:after {
+#sidebar2 nav ul li a:before,
+#sidebar2 nav ul li a:after {
     border-radius: 0.2em;
     bottom: 0;
     content: '';
@@ -105,21 +115,21 @@ p {
     width: 100%; 
 }
 
-#sidebar nav ul li a:before{
+#sidebar2 nav ul li a:before{
     background: #3c2c62;
 }
 
 
-#sidebar nav ul li a:hover {
+#sidebar2 nav ul li a:hover {
     color: #8A0021;
     /*color: rgba(255, 255, 255, 0.55);*/
 }
 
-#sidebar nav ul li a:after{
+#sidebar2 nav ul li a:after{
     background-image: linear-gradient(to right, #000000, #8A0021);
 }
 
-#sidebar nav ul li a:active{
+#sidebar2 nav ul li a:active{
     color: #fff;
 }
 
@@ -129,9 +139,7 @@ p {
   align-items: stretch;
 }
 
-div.content{
-    margin-left: 300px;
-}
+
 
 .content{
     height: 100%;
@@ -149,8 +157,8 @@ a.logo-link {
 }
 
 .banner{
-    width: 1037px;
-    height: 657px;
+    /*width: 1037px;*/
+    /*height: 657px;*/
 }
 
 .hero-title-wrapper{

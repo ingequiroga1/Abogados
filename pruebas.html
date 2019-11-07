@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  /*background-color: #000000;*/
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  /****
+	pruebas
+  padding: 2.5em 2.5em 0.5em 2.5em;
+  ****/
+  text-align: right;
+}
+
+.sidebar ul li{
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar ul li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar ul li:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.headsidebar{
+	text-align: right;
+}
+
+.sidebar ul li {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar ul li{float: left;}
+  div.content {margin-left: 0;}
+
+  .headsidebar{
+	text-align: center;
+	}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar ul li{
+    text-align: center;
+    float: none;
+  }
+
+  .sidebar ul{
+  	padding: 0;
+  }
+
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+	<div class="headsidebar">
+		<a href="#" class="logo-link">
+		<p>Edgar Aguas</p>
+		</a>
+	</div>
+	<ul>
+	   <li><a href="#intro">INICIO</a></li>
+	   <li><a href="#one">QUIENES SOMOS</a></li>
+	   <li><a href="#two">QUE HACEMOS</a></li>
+	   <li><a href="#three">CONTACTO</a></li>
+    </ul>	
+<!--
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+ -->
+</div>
+
+<div class="content">
+  <h2>Responsive Sidebar Example</h2>
+  <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
+  <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+  <h3>Resize the browser window to see the effect.</h3>
+</div>
+
+</body>
+</html>
